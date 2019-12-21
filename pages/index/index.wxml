@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="btn" bindtap="clearToken"> 清空用户信息 </view>
+    <view class="btn" bindtap="getUserInfo"> 登录 </view>
+    <view class="btn" bindtap="getLatest"> 获取最新一期 </view>
+    <view class="btn" bindtap="getNext"> 获取下一期 </view>
+    <view class="btn" bindtap="getPre"> 获取上一期 </view>
+    <view class="btn" bindtap="getLike"> 点赞 </view>
+    <view class="btn" bindtap="getDislike"> 取消点赞 </view>
+    <view class="btn" bindtap="getLikeDetail"> 获取期刊点赞情况 </view>
+</view>
