@@ -13,4 +13,5 @@
     <view class="btn" bindtap="getBookList"> 获取书籍列表 </view>
     <view class="btn" bindtap="getBookDetail"> 获取书籍详情 </view>
     <view class="btn" bindtap="getBookSearch"> 搜索书籍 </view>
+    <view class="btn" bindtap="getFavorCount"> 喜欢图书的数量 </view>
 </view>

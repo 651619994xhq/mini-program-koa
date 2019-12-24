@@ -256,5 +256,21 @@ Page({
       }
     })
 
+  },
+  getFavorCount(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/favor/count',
+      method:'GET',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+      },
+      success(res) {
+
+      }
+    })
+
   }
 })
