@@ -8,4 +8,9 @@
     <view class="btn" bindtap="getLike"> 点赞 </view>
     <view class="btn" bindtap="getDislike"> 取消点赞 </view>
     <view class="btn" bindtap="getLikeDetail"> 获取期刊点赞情况 </view>
+    <view class="btn" bindtap="getFavorDetail"> 获取期刊点赞详情 </view>
+    <view class="btn" bindtap="getLikeList"> 获取喜欢的列表 </view>
+    <view class="btn" bindtap="getBookList"> 获取书籍列表 </view>
+    <view class="btn" bindtap="getBookDetail"> 获取书籍详情 </view>
+    <view class="btn" bindtap="getBookSearch"> 搜索书籍 </view>
 </view>

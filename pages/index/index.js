@@ -170,5 +170,91 @@ Page({
       }
     })
 
+  },
+  getLikeList(){
+    wx.request({
+      url: 'http://localhost:3000/v1/classic/favorList',
+      method:'POST',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+      },
+      success(res) {
+       console.log(res.data)
+      }
+    })
+
+  },
+  getFavorDetail(){
+    wx.request({
+      url: 'http://localhost:3000/v1/classic/favor/detail',
+      method:'POST',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+        id:1,
+        type:100,
+      },
+      success(res) {
+
+      }
+    })
+
+  },
+  getBookList(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/hot_list',
+      method:'POST',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+        id:1,
+        type:100,
+      },
+      success(res) {
+
+      }
+    })
+
+  },
+  getBookDetail(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/detail',
+      method:'POST',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+        id:1120,
+      },
+      success(res) {
+
+      }
+    })
+
+  },
+  getBookSearch(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/search',
+      method:'GET',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+        q:'海贼王',
+      },
+      success(res) {
+
+      }
+    })
+
   }
 })
