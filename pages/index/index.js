@@ -272,5 +272,21 @@ Page({
       }
     })
 
-  }
+  },
+  getBookMyFavor(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/1120/favor',
+      method:'GET',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+      },
+      success(res) {
+
+      }
+    })
+
+  },
 })
