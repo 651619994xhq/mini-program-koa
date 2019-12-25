@@ -15,4 +15,7 @@
     <view class="btn" bindtap="getBookSearch"> 搜索书籍 </view>
     <view class="btn" bindtap="getFavorCount"> 喜欢图书的数量 </view>
     <view class="btn" bindtap="getBookMyFavor"> 获取书籍的点赞数量和自己是否喜欢 </view>
+    <view class="btn" bindtap="addBookComment"> 增加短评 </view>
+    <view class="btn" bindtap="getBookShortComment"> 获取书籍短评 </view>
+    <view class="btn" bindtap="getHotKeyWords"> 获取热搜 </view>
 </view>

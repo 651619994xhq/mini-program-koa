@@ -289,4 +289,50 @@ Page({
     })
 
   },
+  addBookComment(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/add/short_comment',
+      method:'POST',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      data:{
+        book_id:1120,
+        content:'test'
+      },
+      success(res) {
+
+      }
+    })
+
+  },
+  getBookShortComment(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/1120/short_comment',
+      method:'get',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      success(res) {
+       console.log(res);
+      }
+    })
+
+  },
+  getHotKeyWords(){
+    wx.request({
+      url: 'http://localhost:3000/v1/book/hot_keyword',
+      method:'get',
+      header: {
+        'content-type': 'application/json', // 默认值
+        token:app.globalData.token,
+      },
+      success(res) {
+        console.log(res);
+      }
+    })
+
+  }
 })
